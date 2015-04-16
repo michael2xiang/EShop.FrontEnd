@@ -39,6 +39,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="StructureMap">
+      <HintPath>..\packages\structuremap.3.1.5.154\lib\net40\StructureMap.dll</HintPath>
+    </Reference>
     <Reference Include="System.Data.Entity" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
@@ -195,6 +198,32 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.FrontEnd.Controllers\EShop.FrontEnd.Controllers.csproj">
+      <Project>{67e8a8d9-1574-4346-98e9-89ffcfa15df3}</Project>
+      <Name>EShop.FrontEnd.Controllers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Core\EShop.FrontEnd.Core.csproj">
+      <Project>{f4bcf1fd-4642-4886-a324-229b52aa5b2e}</Project>
+      <Name>EShop.FrontEnd.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Model\EShop.FrontEnd.Model.csproj">
+      <Project>{b281ecd6-f1f8-4754-a80c-bbed482c0402}</Project>
+      <Name>EShop.FrontEnd.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Repository.NHibernate\EShop.FrontEnd.Repository.NHibernate.csproj">
+      <Project>{116fd904-adbc-4363-998c-bdf76ba2436b}</Project>
+      <Name>EShop.FrontEnd.Repository.NHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Services.Cache\EShop.FrontEnd.Services.Cache.csproj">
+      <Project>{8a097234-0e55-4ea4-ba4f-d6c35c6fba1f}</Project>
+      <Name>EShop.FrontEnd.Services.Cache</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Services\EShop.FrontEnd.Services.csproj">
+      <Project>{fdb9a043-1e54-4fcb-b54e-c0a6b6b36d26}</Project>
+      <Name>EShop.FrontEnd.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

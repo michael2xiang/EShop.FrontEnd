@@ -30,8 +30,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Iesi.Collections">
+      <HintPath>..\packages\NHibernate-4.0.3.GA-src\lib\net\4.0\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="NHibernate">
+      <HintPath>..\packages\NHibernate-4.0.3.GA-src\lib\net\4.0\NHibernate.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,6 +47,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.FrontEnd.Core\EShop.FrontEnd.Core.csproj">
+      <Project>{f4bcf1fd-4642-4886-a324-229b52aa5b2e}</Project>
+      <Name>EShop.FrontEnd.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Model\EShop.FrontEnd.Model.csproj">
+      <Project>{b281ecd6-f1f8-4754-a80c-bbed482c0402}</Project>
+      <Name>EShop.FrontEnd.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

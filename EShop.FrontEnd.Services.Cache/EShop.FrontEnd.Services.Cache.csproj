@@ -41,6 +41,20 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EShop.FrontEnd.Core\EShop.FrontEnd.Core.csproj">
+      <Project>{f4bcf1fd-4642-4886-a324-229b52aa5b2e}</Project>
+      <Name>EShop.FrontEnd.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Model\EShop.FrontEnd.Model.csproj">
+      <Project>{b281ecd6-f1f8-4754-a80c-bbed482c0402}</Project>
+      <Name>EShop.FrontEnd.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EShop.FrontEnd.Services\EShop.FrontEnd.Services.csproj">
+      <Project>{fdb9a043-1e54-4fcb-b54e-c0a6b6b36d26}</Project>
+      <Name>EShop.FrontEnd.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
