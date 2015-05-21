@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EShop.FrontEnd.Repository.NHibernate.SessionStorage;
+﻿using EShop.FrontEnd.Repository.NHibernate.SessionStorage;
 using NHibernate;
-using EShop.FrontEnd.Core.Configuration;
 using NHibernate.Cfg;
 
 namespace EShop.FrontEnd.Repository.NHibernate

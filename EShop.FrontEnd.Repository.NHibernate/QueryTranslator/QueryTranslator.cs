@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using NHibernate;
 using EShop.FrontEnd.Core.Querying;
 using NHibernate.Criterion;
@@ -11,7 +8,7 @@ namespace EShop.FrontEnd.Repository.NHibernate.QueryTranslator
 {
     public static class QueryTranslator
     {
-        public static ICriteria TranslateIntoNHQuery<T>(this Query query, ICriteria criteria)
+        public static ICriteria TranslateIntoNhQuery<T>(this Query query, ICriteria criteria)
         {
             BuildQueryFrom(query, criteria);
             if (query.OrderByClause != null)

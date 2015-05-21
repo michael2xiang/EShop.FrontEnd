@@ -1,12 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using EShop.FrontEnd.Core.Domain;
 using EShop.FrontEnd.Core.Querying;
 using EShop.FrontEnd.Core.UnitOfWork;
-using EShop.FrontEnd.Repository.NHibernate.SessionStorage;
 using NHibernate;
 
 namespace EShop.FrontEnd.Repository.NHibernate.Repositories

@@ -42,7 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoMapperBootStrapper.cs" />
+    <Compile Include="Interfaces\IProductCatalogService.cs" />
+    <Compile Include="Mapping\CategoryMapper.cs" />
+    <Compile Include="Mapping\IProductAttributeMapper.cs" />
+    <Compile Include="Mapping\ProductTitleMapper.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetAllCategoriesResponse.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetFeatureProductsResponse.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetProductRequest.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetProductResponse.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetProductsByCategoryRequest.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetProductsByCategoryResponse.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\GetProductSearchRequest.cs" />
+    <Compile Include="Messaging\ProductCatalogSerivce\ProductsSortBy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\CategoryView.cs" />
+    <Compile Include="ViewModels\ProductSizeOption.cs" />
+    <Compile Include="ViewModels\ProductSummaryView.cs" />
+    <Compile Include="ViewModels\ProductView.cs" />
+    <Compile Include="ViewModels\Refinement.cs" />
+    <Compile Include="ViewModels\RefinementGroup.cs" />
+    <Compile Include="ViewModels\RefinementGroupings.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EShop.FrontEnd.Core\EShop.FrontEnd.Core.csproj">

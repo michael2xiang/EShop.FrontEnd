@@ -1,0 +1,14 @@
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\obj\Debug\EShop.FrontEnd.Services.csprojResolveAssemblyReference.cache
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\EShop.FrontEnd.Services.dll
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\EShop.FrontEnd.Services.pdb
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\AutoMapper.dll
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\EShop.FrontEnd.Core.dll
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\EShop.FrontEnd.Model.dll
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\log4net.dll
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\EShop.FrontEnd.Core.pdb
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\EShop.FrontEnd.Model.pdb
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\AutoMapper.pdb
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\AutoMapper.xml
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\bin\Debug\log4net.xml
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\obj\Debug\EShop.FrontEnd.Services.dll
+C:\Michael\GitHub\EShop.FrontEnd\EShop.FrontEnd.Services\obj\Debug\EShop.FrontEnd.Services.pdb
