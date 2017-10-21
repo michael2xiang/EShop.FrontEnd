@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.FrontEnd.Core", "EShop.FrontEnd.Core\EShop.FrontEnd.Core.csproj", "{F4BCF1FD-4642-4886-A324-229B52AA5B2E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EShop.FrontEnd.Model", "EShop.FrontEnd.Model\EShop.FrontEnd.Model.csproj", "{B281ECD6-F1F8-4754-A80C-BBED482C0402}"
