@@ -39,3 +39,4 @@ F:\Git\EShop.FrontEnd\EShop.FrontEnd.Core\bin\Debug\Iesi.Collections.xml
 F:\Git\EShop.FrontEnd\EShop.FrontEnd.Core\obj\Debug\EShop.FrontEnd.Core.csprojResolveAssemblyReference.cache
 F:\Git\EShop.FrontEnd\EShop.FrontEnd.Core\obj\Debug\EShop.FrontEnd.Core.dll
 F:\Git\EShop.FrontEnd\EShop.FrontEnd.Core\obj\Debug\EShop.FrontEnd.Core.pdb
+F:\Git\EShop.FrontEnd\EShop.FrontEnd.Core\obj\Debug\EShop.FrontEnd.Core.csproj.CoreCompileInputs.cache

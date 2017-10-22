@@ -43,9 +43,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperBootStrapper.cs" />
+    <Compile Include="Implementations\ProductCatalogService.cs" />
+    <Compile Include="Implementations\ProductSearchRequestQueryGenerator.cs" />
     <Compile Include="Interfaces\IProductCatalogService.cs" />
     <Compile Include="Mapping\CategoryMapper.cs" />
     <Compile Include="Mapping\IProductAttributeMapper.cs" />
+    <Compile Include="Mapping\ProductMapper.cs" />
     <Compile Include="Mapping\ProductTitleMapper.cs" />
     <Compile Include="Messaging\ProductCatalogSerivce\GetAllCategoriesResponse.cs" />
     <Compile Include="Messaging\ProductCatalogSerivce\GetFeatureProductsResponse.cs" />

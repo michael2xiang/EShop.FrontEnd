@@ -49,21 +49,20 @@ namespace EShop.FrontEnd.Repository.NHibernate.Repositories
         {
             ICriteria criteriaQuery = SessionFactory.GetCurrentSession().CreateCriteria(typeof(T));
             AppendCriteria(criteriaQuery);
-            //query.Tran
+            query.TranslateIntoNHQuery<T>(criteriaQuery);
             return criteriaQuery.List<T>();
         }
         public IEnumerable<T> FindBy(Query query,int index,int count )
         {
             ICriteria criteriaQuery = SessionFactory.GetCurrentSession().CreateCriteria(typeof(T));
             AppendCriteria(criteriaQuery);
-
+            query.TranslateIntoNHQuery<T>(criteriaQuery);
             return criteriaQuery.SetFetchSize(count).SetFirstResult(index).List<T>();
        
         }
 
         public virtual void AppendCriteria(ICriteria criteriaQuery)
         {
-            throw new NotImplementedException();
         }
 
 

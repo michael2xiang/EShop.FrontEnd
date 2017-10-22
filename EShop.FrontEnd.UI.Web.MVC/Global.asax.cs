@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EShop.FrontEnd.Services;
+using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
@@ -40,6 +41,7 @@ namespace EShop.FrontEnd.UI.Web.MVC
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+            AutoMapperBootStrapper.ConfigureAutoMapper();
         }
     }
 }

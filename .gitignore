@@ -3,3 +3,5 @@
 ################################################################################
 
 /EShop.FrontEnd.Core/bin/Debug
+/EShop.FrontEnd.UI.Web.MVC/bin
+/.vs/EShop.FrontEnd/v15/Server/sqlite3
