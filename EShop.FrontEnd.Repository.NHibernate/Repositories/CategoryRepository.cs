@@ -12,9 +12,5 @@ namespace EShop.FrontEnd.Repository.NHibernate.Repositories
         { 
         }
 
-        public IEnumerable<Category> FindBy(Query query)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

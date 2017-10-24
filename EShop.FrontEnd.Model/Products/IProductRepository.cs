@@ -5,7 +5,7 @@ using EShop.FrontEnd.Core.Querying;
 
 namespace EShop.FrontEnd.Model.Products
 {
-    public interface IProductRepository : IReadOnlyRepository<ProductTitle, int>
+    public interface IProductRepository : IReadOnlyRepository<Product, int>
     {
     }
 }

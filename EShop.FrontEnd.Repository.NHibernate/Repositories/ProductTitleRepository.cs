@@ -11,10 +11,5 @@ namespace EShop.FrontEnd.Repository.NHibernate.Repositories
             : base(uow)
         {
         }
-
-        public IEnumerable<ProductTitle> FindBy(Query query)
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

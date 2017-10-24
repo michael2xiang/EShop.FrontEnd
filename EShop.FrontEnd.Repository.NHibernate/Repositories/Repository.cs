@@ -52,6 +52,15 @@ namespace EShop.FrontEnd.Repository.NHibernate.Repositories
             query.TranslateIntoNHQuery<T>(criteriaQuery);
             return criteriaQuery.List<T>();
         }
+
+        public IEnumerable<T> FindBy(Query query)
+        {
+            ICriteria criteriaQuery = SessionFactory.GetCurrentSession().CreateCriteria(typeof(T));
+            AppendCriteria(criteriaQuery);
+            query.TranslateIntoNHQuery<T>(criteriaQuery);
+            return criteriaQuery.List<T>();
+
+        }
         public IEnumerable<T> FindBy(Query query,int index,int count )
         {
             ICriteria criteriaQuery = SessionFactory.GetCurrentSession().CreateCriteria(typeof(T));
