@@ -5,3 +5,10 @@
 /EShop.FrontEnd.Core/bin/Debug
 /EShop.FrontEnd.UI.Web.MVC/bin
 /.vs/EShop.FrontEnd/v15/Server/sqlite3
+/EShop.FrontEnd.Controllers/obj
+/EShop.FrontEnd.Core/obj
+/EShop.FrontEnd.Model/obj
+/EShop.FrontEnd.Repository.NHibernate/obj
+/EShop.FrontEnd.Services/obj
+/EShop.FrontEnd.Services.Cache/obj
+/EShop.FrontEnd.UI.Web.MVC/obj

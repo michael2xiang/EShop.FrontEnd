@@ -28,8 +28,9 @@ namespace EShop.FrontEnd.Services
     {
         public string FormatValue(ResolutionContext context)
         {
-            if (context.SourceValue is decimal money)
+            if (context.SourceValue is decimal)
             {
+                decimal money = (decimal)context.SourceValue;
                 return money.FormatMoney();
             }
             return context.SourceValue.ToString();
