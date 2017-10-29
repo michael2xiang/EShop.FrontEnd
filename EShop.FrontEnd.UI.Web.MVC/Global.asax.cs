@@ -1,4 +1,9 @@
-﻿using EShop.FrontEnd.Services;
+﻿using EShop.FrontEnd.Controllers;
+using EShop.FrontEnd.Core.Configuration;
+using EShop.FrontEnd.Core.Email;
+using EShop.FrontEnd.Core.Logging;
+using EShop.FrontEnd.Services;
+using StructureMap;
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -23,7 +28,7 @@ namespace EShop.FrontEnd.UI.Web.MVC
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-
+            routes.IgnoreRoute("{*favicon}",new {favion=@"(.*/)?favicon.ico(/.*)?" });
             routes.MapRoute(
                 "Default", // Route name
                 "{controller}/{action}/{id}", // URL with parameters
@@ -41,7 +46,16 @@ namespace EShop.FrontEnd.UI.Web.MVC
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            BootStrapper.ConfigureDependencies();
             AutoMapperBootStrapper.ConfigureAutoMapper();
+            ApplicationSettingsFactory.InitApplicationSettingsFactory(
+                ObjectFactory.GetInstance<IApplicationSettings>()
+                );
+            LoggingFactory.InitLogginFactory(ObjectFactory.GetInstance<ILogger>());
+            EmailServiceFactory.InitEmailService(ObjectFactory.GetInstance<IEmailService>());
+            ControllerBuilder.Current.SetControllerFactory(new IoCControllerFactory());
+            LoggingFactory.GetLogger().Log("application started");
         }
     }
 }

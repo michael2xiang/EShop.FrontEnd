@@ -15,6 +15,7 @@ namespace EShop.FrontEnd.Controllers.ViewModels.ProductCatalog
         public int NumberOfTitlesFound { get; set; }
         public int CurrentPage { get; set; }
         public IEnumerable<ProductSummaryView> Products { get; set; }
+        public int TotalNumberOfPages { get; set; }
 
         public ProductSearchResultView()
         {

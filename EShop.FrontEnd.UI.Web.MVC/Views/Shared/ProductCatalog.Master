@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#"  MasterPageFile="Site.Master" AutoEventWireup="true" CodeBehind="ProductCatalog.master.cs"
+     Inherits="EShop.FrontEnd.UI.Web.MVC.Views.Shared.ProductCatalog" Inherits="System.Web.Mvc.ViewMasterPage<BaseProductCatalogPageView>" %>
+<%@ Import Namespace ="EShop.FrontEnd.Controlllers.ViewModels.ProductCatalog"%>
+
+
+<asp:Content ID="TitleContent" ContentPlaceHolderID="TitleContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">            
+    </asp:ContentPlaceHolder>   
+</asp:Content> 
+ 
+ 
+<asp:Content ID="MainContent" ContentPlaceHolderID="MainContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">            
+
+    </asp:ContentPlaceHolder>   
+</asp:Content> 
+
+<asp:Content ID="headerBasketSummary" ContentPlaceHolderID="headerBasketSummary" runat="server">    
+</asp:Content>
+
+<asp:Content ID="MenuContent" ContentPlaceHolderID="MenuContent" runat="server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">            
+        <% Html.RenderPartial("~/Views/Shared/Categories.ascx",
+                            ((BaseProductCatalogPageView)Model).Categories); %>  
+    </asp:ContentPlaceHolder>       
+</asp:Content>

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EShop.FrontEnd.Services.Interfaces;
 using System.Web.Mvc;
 using EShop.FrontEnd.Controllers.ViewModels.ProductCatalog;
+using EShop.FrontEnd.Services.Messaging.ProductCatalogSerivce;
 
 namespace EShop.FrontEnd.Controllers.Controllers
 {
@@ -20,6 +21,10 @@ namespace EShop.FrontEnd.Controllers.Controllers
         public ActionResult Index()
         {
             HomePageView homePageView = new HomePageView();
+            homePageView.Categories = base.GetCategories();
+
+            GetFeatureProductsResponse response = _productCatelogService.GetFeatureProducts();
+            homePageView.Products = response.Products;
 
             return View(homePageView);
         }

@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 
 namespace EShop.FrontEnd.Core.Configuration
 {
@@ -7,6 +8,14 @@ namespace EShop.FrontEnd.Core.Configuration
         public string LoggerName
         {
             get { return ConfigurationManager.AppSettings["LoggerName"]; }
+        }
+
+        public string NumberOfResultsPerPage
+        {
+            get
+            {
+                return ConfigurationManager.AppSettings["NumberOfResultsPerPage"];
+            }
         }
     }
 }
