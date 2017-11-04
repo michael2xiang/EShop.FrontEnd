@@ -111,40 +111,21 @@
     </Compile>
     <Compile Include="Helpers\EshopHtmlHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Shared\Categories.ascx.cs">
-      <DependentUpon>Categories.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Shared\Categories.ascx.designer.cs">
-      <DependentUpon>Categories.ascx</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Shared\ProductCatalog.Master.cs">
-      <DependentUpon>ProductCatalog.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Shared\ProductCatalog.Master.designer.cs">
-      <DependentUpon>ProductCatalog.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Shared\Site.Master.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Shared\Site.Master.designer.cs">
-      <DependentUpon>Site.Master</DependentUpon>
-    </Compile>
-    <Compile Include="Views\Shared\SiteFooter.ascx.cs">
-      <DependentUpon>SiteFooter.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Views\Shared\SiteFooter.ascx.designer.cs">
-      <DependentUpon>SiteFooter.ascx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\EShop.mdf" />
     <Content Include="App_Data\EShop_log.ldf">
       <DependentUpon>EShop.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Images\Structure\background.gif" />
+    <Content Include="Content\Images\Structure\lg_logo.png" />
+    <Content Include="Content\Images\Structure\modal-background.png" />
+    <Content Include="Content\Images\Structure\refinement-available.gif" />
+    <Content Include="Content\Images\Structure\refinement-disabled.gif" />
+    <Content Include="Content\Images\Structure\refinement-selected.gif" />
+    <Content Include="Content\Images\Structure\refinement-selecteddisabled.gif" />
+    <Content Include="Content\Images\Structure\retro_background.gif" />
+    <Content Include="Content\Images\Structure\sm_logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
@@ -201,6 +182,7 @@
     <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="Global.asax" />
+    <Content Include="Config\Log4net.config" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\eshop-common-scripts.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
@@ -215,8 +197,8 @@
     <Content Include="Scripts\json2.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Views\Home\Index.aspx" />
-    <Content Include="Views\Poduct\Detail.aspx" />
-    <Content Include="Views\Poduct\ProductSearchResults.aspx" />
+    <Content Include="Views\Product\Detail.aspx" />
+    <Content Include="Views\Product\ProductSearchResults.aspx" />
     <Content Include="Views\Shared\Categories.ascx" />
     <Content Include="Views\Shared\SiteFooter.ascx" />
     <Content Include="Web.config">
@@ -247,7 +229,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Content\Images\Products\" />
-    <Folder Include="Content\Images\Structure\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

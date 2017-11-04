@@ -23,7 +23,7 @@ namespace EShop.FrontEnd.Core.Querying
 
         public static Criterion Create<T>(Expression<Func<T, object>> expression,object value,CriteriaOperator criteriOperator)
         {
-            string properName = PropertyNameHelper.ResolvePorpertyName<T>(expression);
+            string properName = PropertyNameHelper.ResolvePropertyName<T>(expression);
             Criterion myCriteriaOperator = new Criterion(properName, value, criteriOperator);
             return myCriteriaOperator;
         }

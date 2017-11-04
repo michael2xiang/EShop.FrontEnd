@@ -30,7 +30,7 @@
 					  />
 
     <many-to-one name="Category"
-                      class="Agathas.Storefront.Model.Categories.Category"
+                      class="EShop.FrontEnd.Model.Categories.Category"
                       column="CategoryId"
                       not-null="true"
                       lazy="false"

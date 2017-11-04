@@ -5,10 +5,10 @@
 <%@ Import Namespace="EShop.FrontEnd.Services.ViewModels" %>
 <%@ Import Namespace="EShop.FrontEnd.UI.Web.MVC.Helpers" %> 
 
-<asp:Content ID="indexTitle" ContentPlaceHolderID="TitleContent" runat="server">
+<asp:Content ID="indexTitle" ContentPlaceHolderID="TitlePlaceContent" runat="server">
     Home Page
 </asp:Content>
-<asp:Content ID="indexContent" ContentPlaceHolderID="MainContent" runat="server">
+<asp:Content ID="indexContent" ContentPlaceHolderID="MainPlaceContent" runat="server">
     <img width="559" height="297" 
         src="<%=Html.Resolve("/Content/Images/Products/product-lifestyle.jpg")%>"
         style="border-width: 0px; padding: 0px; margin: 0px" />

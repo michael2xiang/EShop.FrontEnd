@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="SiteFooter.ascx.cs" Inherits="EShop.FrontEnd.UI.Web.MVC.Views.Shared.SiteFooter" %>
+﻿<%@ Control Language="C#"  Inherits="System.Web.Mvc.ViewUserControl" %>
 <%@ Import Namespace="EShop.FrontEnd.UI.Web.MVC.Helpers" %>
 <div id="prefooter">
     <span style="float: left; margin-left: 20px;">

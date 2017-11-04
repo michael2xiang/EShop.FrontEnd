@@ -1,5 +1,5 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Categories.ascx.cs" Inherits="EShop.FrontEnd.UI.Web.MVC.Views.Shared.Categories" %>
-<%@ Import Namespace ="EShop.FrontEnd.Service.ViewModels"%>
+﻿<%@ Control Language="C#" Inherits="System.Web.Mvc.ViewUserControl<IEnumerable<CategoryView>>" %>
+<%@ Import Namespace ="EShop.FrontEnd.Services.ViewModels"%>
 
 <h2>Categories</h2>
 <ul class="refine-attributes">						

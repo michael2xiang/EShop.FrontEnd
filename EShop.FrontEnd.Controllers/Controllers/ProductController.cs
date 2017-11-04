@@ -54,7 +54,7 @@ namespace EShop.FrontEnd.Controllers.Controllers
             productSearchResultView.NumberOfTitlesFound = response.NumberOfTitlesFound;
             productSearchResultView.Products = response.products;
             productSearchResultView.RefinementGroups = response.RefinementGroups;
-            productSearchResultView.SelectedCategortName = response.SelectedCategoryName;
+            productSearchResultView.SelectedCategoryName = response.SelectedCategoryName;
             productSearchResultView.TotalNumberOfPages = response.TotalNumberOfPages;
             return productSearchResultView;
         }

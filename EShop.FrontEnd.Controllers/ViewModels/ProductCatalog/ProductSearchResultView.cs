@@ -9,7 +9,7 @@ namespace EShop.FrontEnd.Controllers.ViewModels.ProductCatalog
 {
     public class ProductSearchResultView:BaseProductCatalogPageView
     {
-        public string SelectedCategortName { get; set; }
+        public string SelectedCategoryName { get; set; }
         public int SelectedCategory { get; set; }
         public IEnumerable<RefinementGroup> RefinementGroups { get; set; }
         public int NumberOfTitlesFound { get; set; }

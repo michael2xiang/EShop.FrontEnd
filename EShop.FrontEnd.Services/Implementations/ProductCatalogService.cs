@@ -39,7 +39,8 @@ namespace EShop.FrontEnd.Services.Implementations
             Query productQuery = new Query();
             productQuery.OrderByClause = new OrderByClause() {
                     Dese = true,
-                    PropertyName= PropertyNameHelper.ResolvePorpertyName<ProductTitle>(pt=>pt.Price)
+                //PropertyName= "Price"
+                PropertyName = PropertyNameHelper.ResolvePropertyName<ProductTitle>(pt => pt.Price)
             };
             response.Products = _productTitleRepository.FindBy(productQuery,0,6).ConverToProductviews();
             return response;

@@ -1,6 +1,7 @@
 ﻿using EShop.FrontEnd.Core.Configuration;
 using log4net;
 using log4net.Config;
+using System.Web;
 
 namespace EShop.FrontEnd.Core.Logging
 {
@@ -10,7 +11,7 @@ namespace EShop.FrontEnd.Core.Logging
 
         public Log4NetAdapter()
         {
-            XmlConfigurator.Configure();
+            XmlConfigurator.Configure(new System.IO.FileInfo(HttpContext.Current.Server.MapPath("~") + "Config\\log4net.config"));
             _log = LogManager.GetLogger(ApplicationSettingsFactory.GetApplicationSettings().LoggerName);
         }
 
