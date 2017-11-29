@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Runtime.Serialization.Json;
 using System.Text;
@@ -20,10 +21,29 @@ namespace EShop.FrontEnd.Controllers.JsonDTOs
             {
                 throw new ArgumentException("bindingContext");
             }
+            string str = "{\"CategoryId\":\"1\",\"Index\":1,\"SortBy\":\"2\",\"RefinementGroups\":[]}";
 
-            var serializer = new DataContractJsonSerializer(bindingContext.ModelType);
+            //using (MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(str)))
+            using (var streamrd = new StreamReader(controllerContext.HttpContext.Request.InputStream))
+            {
+                //TODO:获取不了请求的json，所以报错
+                string json = streamrd.ReadToEnd();
+                using (MemoryStream ms = new MemoryStream(Encoding.Unicode.GetBytes(json)))
+                {
+                    var serializer = new DataContractJsonSerializer(bindingContext.ModelType);
+                    //var b = serializer.ReadObject(ms);
+                    //return b;
+                    //var inputStream = controllerContext.HttpContext.Request.InputStream;
 
-            return serializer.ReadObject(controllerContext.HttpContext.Request.InputStream);
-        }
+                    var obj = serializer.ReadObject(ms);
+                    return obj;
+                }
+
+            }
+
+
+
+
+    }
     }
 }

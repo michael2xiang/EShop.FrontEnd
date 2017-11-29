@@ -3,6 +3,8 @@ using EShop.FrontEnd.Model.Products;
 using EShop.FrontEnd.Model.Categories;
 using EShop.FrontEnd.Services.ViewModels;
 using EShop.FrontEnd.Core.Helpers;
+using EShop.FrontEnd.Model.Shipping;
+using EShop.FrontEnd.Model.Basket;
 
 namespace EShop.FrontEnd.Services
 {
@@ -20,6 +22,10 @@ namespace EShop.FrontEnd.Services
             Mapper.CreateMap<IProductAttribute, Refinement>();
 
             Mapper.AddFormatter<MoneyFormatter>();
+
+            Mapper.CreateMap<DeliveryOption, DeliveryOptionView>();
+            Mapper.CreateMap<BasketItem, BasketItemView>();
+            Mapper.CreateMap<BasketModel, BasketView>();
         }
 
     }

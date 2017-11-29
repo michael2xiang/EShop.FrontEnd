@@ -117,6 +117,13 @@
     <Content Include="App_Data\EShop_log.ldf">
       <DependentUpon>EShop.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\Images\Products\1.jpg" />
+    <Content Include="Content\Images\Products\2.jpg" />
+    <Content Include="Content\Images\Products\3.jpg" />
+    <Content Include="Content\Images\Products\4.jpg" />
+    <Content Include="Content\Images\Products\5.jpg" />
+    <Content Include="Content\Images\Products\6.jpg" />
+    <Content Include="Content\Images\Products\product-lifestyle.jpg" />
     <Content Include="Content\Images\Structure\background.gif" />
     <Content Include="Content\Images\Structure\lg_logo.png" />
     <Content Include="Content\Images\Structure\modal-background.png" />
@@ -227,9 +234,7 @@
     <Content Include="Views\Shared\Site.Master" />
     <Content Include="Views\Shared\ProductCatalog.Master" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Content\Images\Products\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="packages.config" />
   </ItemGroup>
