@@ -43,8 +43,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutoMapperBootStrapper.cs" />
+    <Compile Include="Implementations\BasketDoesNotExistException.cs" />
+    <Compile Include="Implementations\BasketService.cs" />
     <Compile Include="Implementations\ProductCatalogService.cs" />
     <Compile Include="Implementations\ProductSearchRequestQueryGenerator.cs" />
+    <Compile Include="Interfaces\IBasketService.cs" />
     <Compile Include="Interfaces\IProductCatalogService.cs" />
     <Compile Include="Mapping\BasketMapper.cs" />
     <Compile Include="Mapping\CategoryMapper.cs" />
