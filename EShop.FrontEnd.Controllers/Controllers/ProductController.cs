@@ -1,6 +1,7 @@
 ﻿using EShop.FrontEnd.Controllers.JsonDTOs;
 using EShop.FrontEnd.Controllers.ViewModels.ProductCatalog;
 using EShop.FrontEnd.Core.Configuration;
+using EShop.FrontEnd.Core.CookieStorage;
 using EShop.FrontEnd.Services.Interfaces;
 using EShop.FrontEnd.Services.Messaging.ProductCatalogSerivce;
 using EShop.FrontEnd.Services.ViewModels;
@@ -17,8 +18,10 @@ namespace EShop.FrontEnd.Controllers.Controllers
     {
         private readonly IProductCatalogService _prodcutService;
 
-        public ProductController(IProductCatalogService productService)
-            :base(productService)
+        public ProductController(
+            ICookieStorageService cookieStorageService,
+            IProductCatalogService productService)
+            :base(cookieStorageService, productService)
         {
             _prodcutService = productService;
         }
@@ -49,6 +52,7 @@ namespace EShop.FrontEnd.Controllers.Controllers
         {
             ProductSearchResultView productSearchResultView =
                 new ProductSearchResultView();
+            productSearchResultView.BasketSummary = base.GetBasketSummaryView();
             productSearchResultView.Categories = base.GetCategories();
             productSearchResultView.CurrentPage = response.CurrentPage;
             productSearchResultView.NumberOfTitlesFound = response.NumberOfTitlesFound;
@@ -109,6 +113,7 @@ namespace EShop.FrontEnd.Controllers.Controllers
             ProductView productView = response.Product;
             productDetailView.Product = productView;
             productDetailView.Categories = base.GetCategories();
+            productDetailView.BasketSummary = base.GetBasketSummaryView();
             return View(productDetailView);
         }
     }

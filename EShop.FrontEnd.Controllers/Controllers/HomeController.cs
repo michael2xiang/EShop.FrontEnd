@@ -7,13 +7,16 @@ using EShop.FrontEnd.Services.Interfaces;
 using System.Web.Mvc;
 using EShop.FrontEnd.Controllers.ViewModels.ProductCatalog;
 using EShop.FrontEnd.Services.Messaging.ProductCatalogSerivce;
+using EShop.FrontEnd.Core.CookieStorage;
 
 namespace EShop.FrontEnd.Controllers.Controllers
 {
     public class HomeController : ProductCatelogBaseController
     {
         private readonly IProductCatalogService _productCatelogService;
-        public HomeController(IProductCatalogService productCatelogService) : base(productCatelogService)
+        public HomeController(
+            ICookieStorageService cookieStorageService,
+            IProductCatalogService productCatelogService) : base(cookieStorageService,productCatelogService)
         {
             _productCatelogService = productCatelogService;
         }
@@ -22,6 +25,7 @@ namespace EShop.FrontEnd.Controllers.Controllers
         {
             HomePageView homePageView = new HomePageView();
             homePageView.Categories = base.GetCategories();
+            homePageView.BasketSummary = base.GetBasketSummaryView();
 
             GetFeatureProductsResponse response = _productCatelogService.GetFeatureProducts();
             homePageView.Products = response.Products;

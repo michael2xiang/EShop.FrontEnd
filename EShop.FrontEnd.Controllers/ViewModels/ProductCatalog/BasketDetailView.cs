@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace EShop.FrontEnd.Controllers.ViewModels.ProductCatalog
 {
-    public abstract class BaseProductCatalogPageView : BaskPageView
+    public class BasketDetailView
     {
-        public IEnumerable<CategoryView> Categories { get; set;}
+        public BasketView Basket { get; set; }
+        public IEnumerable<DeliveryOptionView> DeliveryOptions { get; set; }
     }
 }
