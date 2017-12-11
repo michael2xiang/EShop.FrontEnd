@@ -11,5 +11,7 @@ namespace EShop.FrontEnd.Controllers.ViewModels.ProductCatalog
     {
         public BasketView Basket { get; set; }
         public IEnumerable<DeliveryOptionView> DeliveryOptions { get; set; }
+        public IEnumerable<CategoryView> Categories { get; set; }
+        public BasketSummaryView BasketSummary { get; set; }
     }
 }

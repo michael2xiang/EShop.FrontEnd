@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\BasketController.cs" />
     <Compile Include="Controllers\BasketMapper.cs" />
     <Compile Include="Controllers\CookieDataKeys.cs" />
     <Compile Include="Controllers\HomeController.cs" />

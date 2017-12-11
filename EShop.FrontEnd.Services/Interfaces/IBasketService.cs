@@ -10,7 +10,7 @@ namespace EShop.FrontEnd.Services.Interfaces
     public interface IBasketService
     {
 
-        GetBastetResponse GetBasket(GetBasketRequest basketRequest);
+        GetBasketResponse GetBasket(GetBasketRequest basketRequest);
         CreateBasketResponse CreateBasket(CreateBasketRequest basketRequest);
         ModifyBasketResponse ModifyBasket(ModifyBasketRequest request);
         GetAllDispatchOptoinsResponse GetAllDispatchOptions();

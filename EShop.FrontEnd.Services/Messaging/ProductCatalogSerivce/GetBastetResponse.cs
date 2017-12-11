@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EShop.FrontEnd.Services.Messaging.ProductCatalogSerivce
 {
-    public class GetBastetResponse
+    public class GetBasketResponse
     {
         public BasketView Basket { get; set; }
     }

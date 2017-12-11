@@ -83,9 +83,9 @@ namespace EShop.FrontEnd.Services.Implementations
             return response;
         }
 
-        public GetBastetResponse GetBasket(GetBasketRequest basketRequest)
+        public GetBasketResponse GetBasket(GetBasketRequest basketRequest)
         {
-            GetBastetResponse response = new GetBastetResponse();
+            GetBasketResponse response = new GetBasketResponse();
             BasketModel basket = _basketRepository.FindBy(basketRequest.BasketId);
             BasketView basketView;
             if (basket != null)
@@ -96,7 +96,6 @@ namespace EShop.FrontEnd.Services.Implementations
             response.Basket = basketView;
             return response;
         }
-
         public ModifyBasketResponse ModifyBasket(ModifyBasketRequest request)
         {
             ModifyBasketResponse response = new ModifyBasketResponse();
